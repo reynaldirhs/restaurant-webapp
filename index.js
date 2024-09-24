@@ -27,3 +27,11 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
+// Add this route below the existing routes
+
+// Test route to handle POST requests
+app.post('/test', (req, res) => {
+    console.log(req.body); // Log the parsed request body
+    res.send('Data received');
+  });
+  
