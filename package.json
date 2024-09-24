@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.3",
+    "escpos": "^3.0.0-alpha.6",
     "express": "^4.21.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "qrcode": "^1.5.4"
   }
 }

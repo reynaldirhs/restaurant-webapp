@@ -1,8 +1,48 @@
-/* styles.css */
+/* public/css/styles.css */
+
+/* Existing styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+  }
+  
+  /* New styles for the start button */
+  #start-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #start-button:hover {
+    background-color: #218838;
+  }
+  /* public/css/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #table-container button {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
   }
   
