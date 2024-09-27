@@ -252,7 +252,8 @@ async function emitActiveTablesUpdate() {
 setInterval(emitActiveTablesUpdate, 5000); // Every 5 seconds
 
 // Start the server
-const port = 3000;
-server.listen(port, '0.0.0.0', () => {
-  console.log(`Server is running and accessible on your local network.`);
+const port = process.env.PORT || 3000;
+server.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`);
 });
+
