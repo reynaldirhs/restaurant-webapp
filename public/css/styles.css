@@ -1,20 +1,107 @@
 /* public/css/styles.css */
 
-/* Existing styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+    background-color: #f9f9f9;
   }
   
   h1 {
-    margin-bottom: 40px;
+    font-size: 36px;
+    margin-bottom: 10px;
   }
   
-  /* New styles for the start button */
-  #start-button {
-    padding: 15px 30px;
-    font-size: 18px;
+  h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .header .logo {
+    max-height: 80px;
+  }
+  
+  .header h1 {
+    margin: 10px 0 0 0;
+  }
+  
+  /* Sections Container */
+  #sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Section Styling */
+  .section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+  }
+  
+  .section h3 {
+    margin-top: 0;
+  }
+  
+  .tables {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tables button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .tables button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Manual Entry Styles */
+  .manual-entry {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .manual-entry input,
+  .manual-entry select {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .manual-entry button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
     background-color: #28a745;
     color: #fff;
@@ -22,27 +109,12 @@ body {
     border-radius: 5px;
   }
   
-  #start-button:hover {
+  .manual-entry button:hover {
     background-color: #218838;
   }
-  /* public/css/styles.css */
-
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-  }
   
-  #table-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  /* Disabled Button Styling */
+  .tables button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
   }
-  
-  #table-container button {
-    margin: 10px;
-    padding: 15px 25px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  

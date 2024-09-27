@@ -1,19 +1,29 @@
 {
   "name": "restaurant-webapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Restaurant Web App",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon --trace-deprecation index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.3",
+    "axios": "^1.7.7",
+    "canvas": "^2.11.2",
+    "dotenv": "^16.4.5",
     "escpos": "^3.0.0-alpha.6",
+    "escpos-network": "^3.0.0-alpha.5",
     "express": "^4.21.0",
-    "path": "^0.12.7",
-    "qrcode": "^1.5.4"
-  }
+    "mysql2": "^3.11.3",
+    "punycode": "^2.3.1",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "overrides": {
+    "psl": "^1.9.0"
+  },
+  "author": "",
+  "license": "ISC"
 }

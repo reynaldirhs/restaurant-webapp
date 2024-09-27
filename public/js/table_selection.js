@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const printerInfo = getPrinterInfo(tableNumber);
       if (printerInfo) {
         const button = document.createElement('button');
-        button.textContent = `Table ${tableNumber} - ${printerInfo.section}`;
+        button.textContent = `Table ${tableNumber} - ${printerInfo.section}`; // Added backticks
         button.addEventListener('click', () => {
-          if (confirm(`Print QR code for Table ${tableNumber}?`)) {
+            if (confirm(`Print QR code for Table ${tableNumber}?`)) { // Added backticks and quotes
             // Send request to the server to generate and print QR code
             fetch('/print', {
               method: 'POST',

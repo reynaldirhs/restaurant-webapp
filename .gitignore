@@ -1,0 +1,4 @@
+node_modules/
+git add .
+git commit -m "Initial commit - set up project structure"
+.env

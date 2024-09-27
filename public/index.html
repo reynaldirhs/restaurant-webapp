@@ -1,16 +1,45 @@
 <!-- public/index.html -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Restaurant Web App</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
-    <h1>Welcome to the Restaurant Web App</h1>
-    <button id="start-button">Go to Table Selection</button>
-    <script src="/js/app.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gurih 7 Bogor Survey</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="header">
+    <img src="/images/cOBKRfgmTdCa1BmF50Sh_b49c9a3414877d2384539497266b1a012 (2).png" alt="Gurih 7 Bogor Logo" class="logo">
+    <h1>Gurih 7 Bogor Survey</h1>
+  </div>
+
+  <!-- Main Page: Table Selection and Manual Entry -->
+  <div id="main-page">
+    <!-- Option 1: Select Active Table -->
+    <h2>Select Active Table</h2>
+    <div id="sections-container"></div>
+
+    <!-- Option 2: Manual Sales Number Entry -->
+    <h2>Or Enter Sales Number Manually</h2>
+    <div class="manual-entry">
+      <input type="text" id="sales-number" placeholder="Enter Sales Number">
+      <select id="printer-select">
+        <option value="" disabled selected>Select Printer</option>
+        <option value="192.168.192.168">Section 1 Printer</option>
+        <option value="192.168.10.83">Section 2 Printer</option>
+        <option value="192.168.10.74">Section 3 Printer</option>
+        <option value="192.168.10.54">Section 4 Printer</option>
+        <option value="192.168.10.47">Section 5 Printer</option>
+        <option value="192.168.10.82">Section 6 Printer</option>
+        <option value="192.168.10.190">Resto Printer</option>
+      </select>
+      <button id="print-button">Print</button>
+    </div>
+  </div>
+
+  <!-- Include necessary scripts -->
+  <script src="/js/data.js"></script>
+  <script src="/js/app.js"></script>
+  <!-- Socket.io -->
+  <script src="/socket.io/socket.io.js"></script>
+</body>
 </html>
-<!-- Add this inside the body -->
-<p id="date-time"></p>
